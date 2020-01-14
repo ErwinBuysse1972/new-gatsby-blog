@@ -20,8 +20,8 @@ return (
   <Layout>
     <SEO title="Home" />
     <div>
-        <h1>Yihua's Toughts</h1>
-        <h4>{data.allMarkdownRemark.totalCount}</h4>
+        <h1>Erwin Buysse's Blog</h1>
+        <h4>{data.allMarkdownRemark.totalCount} Post's'</h4>
         {data.allMarkdownRemark.edges.map( ({node}) => (
             <div key={node.id}>
             <BlogLink to= {node.fields.slug}>
